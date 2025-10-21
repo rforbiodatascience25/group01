@@ -13,6 +13,10 @@ coiaociaodfjdhsaf
 
 This is my section
 
+## New feature
+
+I am writing some text
+
 # s215045
 
 # s215066
@@ -25,6 +29,16 @@ i am da very hacker man
 
 print("hallo world!")
 
+```
+
+## New feature
+
+```{r}
+print("i am very goood at git")
+```
+
+```{r}
+print("Tha GOAT")
 ```
 
 # s215079
