@@ -56,7 +56,7 @@ pca_fit
 Object becomes a tibble when using augment:
 
 ```{r}
-pca_fit %>%
+pca_fit |>
   augment(biopsy)
 ```
 
@@ -83,6 +83,12 @@ pca_fit |>
 ```
 
 ```{r}
+arrow_style <- arrow(
+  angle = 20, ends = "first", type = "closed", length = grid::unit(8, "pt")
+)
+```
+
+```{r}
 pca_fit |>
   tidy(matrix = "rotation") |>
   pivot_wider(names_from = "PC", names_prefix = "PC", values_from = "value") |>
@@ -93,7 +99,7 @@ pca_fit |>
     hjust = 1, nudge_x = -0.02, 
   ) +
   xlim(-1.25, .5) + ylim(-.5, 1) +
-  coord_fixed()
+  coord_fixed() +
   theme_minimal_grid(12)
 ```
 
@@ -112,7 +118,7 @@ pca_fit |>
 #| eval: true
 
 pca_fit |> 
-  tidy(matrix = "eigenvalues") %>%
+  tidy(matrix = "eigenvalues") |>
   ggplot(aes(PC, percent)) +
   geom_col(fill = "#56B4E9", alpha = 0.8) +
   scale_x_continuous(breaks = 1:9) +
