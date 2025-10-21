@@ -23,6 +23,18 @@ library("cowplot")
 biopsy <- read_csv("https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
 ```
 
+## Creating PCA fit variable
+
+```{r}
+print(biopsy)
+```
+
+```{r}
+pca_fit <- biopsy |> 
+  select(-outcome) |> 
+  prcomp(scale = TRUE)
+```
+
 ## Look at the data in PC coordinates 1
 
 ## Look at the data in PC coordinates 2
