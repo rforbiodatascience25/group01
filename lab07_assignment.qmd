@@ -47,6 +47,30 @@ pca_fit <- biopsy |>
 
 ## Look at the data in PC coordinates 1
 
+Using pca_fit results and combining them with outcome from biopsy.
+
+```{r}
+pca_fit
+```
+
+Object becomes a tibble when using augment:
+
+```{r}
+pca_fit %>%
+  augment(biopsy)
+```
+
+```{r}
+pca_fit |> 
+  augment(biopsy) |> 
+  ggplot(aes(.fittedPC1, .fittedPC2, color = outcome)) + 
+  geom_point(size = 1.5) +
+  scale_color_manual(
+    values = c(malignant = "#D55E00", benign = "#0072B2")
+  ) +
+  theme_half_open(12) + background_grid()
+```
+
 ## Look at the data in PC coordinates 2
 
 ## Look at the variance explained by each PC
