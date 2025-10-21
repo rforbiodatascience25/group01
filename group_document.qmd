@@ -31,6 +31,16 @@ print("hallo world!")
 
 ```
 
+## New feature
+
+```{r}
+print("i am very goood at git")
+```
+
+```{r}
+print("Tha GOAT")
+```
+
 # s215079
 
 Bla bla bla
