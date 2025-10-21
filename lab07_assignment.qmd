@@ -12,6 +12,10 @@ editor: visual
 ## Loading Libraries
 
 ```{r}
+#| echo: true
+#| eval: true
+#| message: false
+
 library("tidyverse")
 library("broom")
 library("cowplot")
@@ -19,7 +23,13 @@ library("cowplot")
 
 ## Load Data
 
+The data is downloaded from wilkelab
+
 ```{r}
+#| echo: true
+#| eval: true
+#| message: false
+
 biopsy <- read_csv("https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
 ```
 
