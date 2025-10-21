@@ -1,0 +1,10 @@
+---
+title: "lab07_assignment"
+author: "Author Asbjørn Hansen (s215045), Emiliano Carrara (s250828), Magnus Eriksen (s215066), Oliver Sonne Buch (s215079) & Trine Brøgger (s211443)"
+format:
+  html:
+    embed-resources: true
+editor: visual
+---
+
+## PCA tidyverse style
