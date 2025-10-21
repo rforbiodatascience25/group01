@@ -7,4 +7,14 @@ format:
 editor: visual
 ---
 
-## PCA tidyverse style
+# PCA tidyverse style
+
+## Loading Libraries
+
+## Load Data
+
+## Look at the data in PC coordinates 1
+
+## Look at the data in PC coordinates 2
+
+## Look at the variance explained by each PC
