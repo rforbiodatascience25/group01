@@ -63,12 +63,14 @@ pca_fit %>%
 ```{r}
 pca_fit |> 
   augment(biopsy) |> 
-  ggplot(aes(.fittedPC1, .fittedPC2, color = outcome)) + 
-  geom_point(size = 1.5) +
-  scale_color_manual(
-    values = c(malignant = "#D55E00", benign = "#0072B2")
-  ) +
-  theme_half_open(12) + background_grid()
+  ggplot(
+    aes(.fittedPC1, .fittedPC2, color = outcome))+
+    geom_point(size = 1)+
+      scale_color_manual(
+        values = c(malignant ="black",benign = "green" )
+      )+
+      theme_half_open(12)+
+      background_grid()
 ```
 
 ## Look at the data in PC coordinates 2
