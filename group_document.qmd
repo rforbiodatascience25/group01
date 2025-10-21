@@ -15,4 +15,14 @@ coiaociaodfjdhsaf
 
 # s215066
 
+Jada jada jade
+
+i am da very hacker man
+
+```{r}
+
+print("hallo world!")
+
+```
+
 # s215079
